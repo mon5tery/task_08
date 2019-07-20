@@ -5,3 +5,5 @@ class Restaurant(models.Model):
     description = models.TextField()
     opening_time = models.TimeField()
     closing_time = models.TimeField()
+    logo = models.ImageField(null=True, blank=True)
+    # null is where the 'NUMBER' should be zero or "ObJECT"; while blank = true is to pass if there is no input
